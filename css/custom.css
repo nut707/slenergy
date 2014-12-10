@@ -1,7 +1,26 @@
 body
 {
-
-	background-image: url(../img/фон.png),url(../img/фон_снег.png);
+	min-height: 3000px;
+	background-image: url(../img/background_girl.png),url(../img/background_snow.png);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+header{
+	height: 100px;
+	background-image: url(../img/header_background.png);
+}
+.logo{
+	margin-top: 15px;
+}
+.social-buttons{
+	width: 54px;
+	height: 54px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 30px;
+	line-height: 50px
+}
+.social-buttons:hover{
+	background-image: url(../img/social_icons/hover.png);
 }
