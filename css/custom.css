@@ -1,0 +1,7 @@
+body
+{
+
+	background-image: url(../img/фон.png),url(../img/фон_снег.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
