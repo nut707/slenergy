@@ -61,19 +61,33 @@ h1+h1{
 .dropdown{
 	text-align:center;
 	margin-top: 2em;
+	padding: 0;
+	width: 100%;
 }
 
-.dropdown-toggle, .dropdown-menu{
+.dropdown-toggle{
 	font-size: 2em;
 	font-weight: bold;
 	color: #e60000;
 	border: 2px solid #e60000;
-	background-image: url(../img/top-features-bg-small.png);
+	background-color: white;
+	border-radius: 0.2em;
+	padding: 0.5em;
 }
-.dropdown-toggle:hover, .dropdown-toggle:focus{
+.dropdown-toggle:hover, .dropdown-menu>li a:hover{
 	background-color: #e60000;
 	color: white;
-	background-image: none;
+}
+/*Затемнение кнопки, когда открыто меню*/
+.open>.dropdown-toggle{
+	background-color: #b30000;
+	color: #f2f2f2;
+	border: 2px solid #9a0000;
+}
+.dropdown-menu{
+	font-size: 2em;
+	font-weight: bold;
+	color: #e60000;
 	border: 2px solid #e60000;
 }
 .dropdown-menu li a{
