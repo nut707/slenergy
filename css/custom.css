@@ -8,7 +8,8 @@ body
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	font-family: 'Open Sans', 'Comic Sans MS'
+	font-family: 'Open Sans', 'sans serif';
+	color:#333333;
 }
 /*Шапка*/
 header{
@@ -18,21 +19,11 @@ header{
 .logo{
 	margin-top: 15px;
 }
-.social-buttons{
-	width: 54px;
-	height: 54px;
-	float: left;
-	text-align: center;
-	margin-top: 30px;
-	line-height: 50px
-}
-.social-buttons:hover{
-	background-image: url(../img/social_icons/hover.png);
-}
+
 
 /*Лозунг и заголовок*/
 h1, h2{
-	font-family: 'Proxima Nova', 'Comic Sans MS';
+	font-family: 'Proxima Nova', 'sans serif';
 }
 h1{
 	background: #0077cc;
@@ -52,51 +43,56 @@ h2{
 /*"Фичи"*/
 .top-features{
 	padding-left: 25px;
+	margin: 30px 0;
 }
 .top-features>li{
 	padding-top: 5px;
 }
 
-/*Dropdown*/
-.dropdown{
-	text-align:center;
-	margin: 2em auto;
-	padding: 0;
-	max-width: 350px;
+/*Select and go*/
+.form-control{
+	width: 230px;
+	height: 40px;
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	background: url(../img/arrow.png) no-repeat #fff;
+	background-position: 95% 50%;
+	margin-right: 20px;
+	display: inline; 
+	border: 2px solid #d30027;
+	color:#333333;
+	border-radius: 0;
+}
+/*убираем долбаную стрелку в ИЕ*/
+select::-ms-expand {
+    display: none;
+}
+option{
+	border: 2px solid #d30027;
+	color:#333333;
+}
+/*Кнопка перейти*/
+.button{
+	border: 2px solid #d30027;
+	font-family: 'Proxima Nova', 'sans serif';
+	width: 110px;
+	height: 38px;
+	color: #fff;
+	background-color: #d30027;
+	font-size: 1.4em;
+}
+.button:hover{
+	color:#d30027;
+	background-color: #fff;
+}
+.button:active{
+	color:#b30021;
+	background-color: #fff;
+	border: 2px solid #b30021;
 }
 
-.dropdown-toggle{
-	font-size: 2em;
-	font-weight: bold;
-	color: #e60000;
-	border: 2px solid #e60000;
-	border-radius: 0.2em;
-	padding: 0.5em;
-	background-color: transparent;
-	width:100%;
-}
-.dropdown-toggle:hover, .dropdown-menu>li a:hover{
-	background-color: #e60000;
-	color: white;
-	background-image: none;
-}
-/*Затемнение кнопки, когда открыто меню*/
-.open>.dropdown-toggle{
-	background-color: #b30000;
-	color: #f2f2f2;
-	border: 2px solid #9a0000;
-	background-image: none;
-}
-.dropdown-menu{
-	width: 100%;
-	text-align: center;
-	font-size: 2em;
-	font-weight: bold;
-	color: #e60000;
-	border: 2px solid #e60000;
-	background-color: transparent;
-}
-.dropdown-menu li a{
-	color: #e60000;
-	font-weight: bold;
+/*Разделитель стрелка вниз*/
+.arrow-divider{
+	background: url(../img/arrow-divider.png) no-repeat center;
+	height: 100px;
 }
