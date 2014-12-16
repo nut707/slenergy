@@ -14,7 +14,7 @@ body
 /*Шапка*/
 header{
 	height: 100px;
-	margin-bottom: 65px;
+	margin-bottom: 75px;
 }
 .logo{
 	margin-top: 15px;
@@ -43,10 +43,11 @@ h2{
 /*"Фичи"*/
 .top-features{
 	padding-left: 25px;
-	margin: 30px 0;
+	margin: 20px 0 20px 0;
 }
 .top-features>li{
 	padding-top: 5px;
+	font-size: 1.2em;
 }
 
 /*Select and go*/
@@ -90,9 +91,34 @@ option{
 	background-color: #fff;
 	border: 2px solid #b30021;
 }
+form{
+	margin-bottom: 70px;
+}
 
 /*Разделитель стрелка вниз*/
 .arrow-divider{
 	background: url(../img/arrow-divider.png) no-repeat center;
-	height: 100px;
+	height: 80px;
+}
+
+
+/*Школа*/
+h3{
+	font-family: 'Proxima Nova', 'sans serif';
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+}
+hr{
+	border: none; /* Убираем границу для браузера Firefox */
+    color: #333333; /* Цвет линии для остальных браузеров */
+    background-color: #333333; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px;
+    width: 200px;
+}
+.block-center{
+	display: flex;
+}
+.block-center>.col-md-5{
+	margin: auto;
 }
