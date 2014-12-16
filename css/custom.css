@@ -98,9 +98,13 @@ form{
 /*Разделитель стрелка вниз*/
 .arrow-divider{
 	background: url(../img/arrow-divider.png) no-repeat center;
-	height: 80px;
+	height: 40px;
 }
-
+.divider{
+	position: absolute;
+	bottom: 0;
+	left:50%;
+}
 
 /*Школа*/
 h3{
@@ -117,8 +121,19 @@ hr{
     width: 200px;
 }
 .block-center{
+	position: relative;
 	display: flex;
 }
 .block-center>.col-md-5{
 	margin: auto;
+	z-index: 1;
+}
+h4{
+	color: #0077cc;
+	font-size: 1.6em;
+	background-color: #fff;
+}
+p{
+	font-size: 1.3em;
+	background-color: #fff;
 }
