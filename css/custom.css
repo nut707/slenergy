@@ -55,7 +55,7 @@ h2{
 	width: 230px;
 	height: 40px;
 	-webkit-appearance: none;
-	-moz-appearance:none;
+	-moz-appearance:none;/* Не работает :( */
 	background: url(../img/arrow.png) no-repeat #fff;
 	background-position: 95% 50%;
 	margin-right: 20px;
@@ -136,4 +136,20 @@ h4{
 p{
 	font-size: 1.3em;
 	background-color: #fff;
+}
+
+/*2 pic*/
+.zigzag{
+	background:url(../img/zigzag.png);
+	height: 16px;
+}
+.two-pic div{
+	text-align: center;
+	padding: 40px 0;
+}
+a{
+	color: #d30027;
+}
+a:hover{
+	color: #d30027;
 }
