@@ -112,13 +112,14 @@ h3{
 	font-size: 3em;
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 40px;
 }
-hr{
+.black-hr{
 	border: none; /* Убираем границу для браузера Firefox */
-    color: #333333; /* Цвет линии для остальных браузеров */
-    background-color: #333333; /* Цвет линии для браузера Firefox и Opera */
-    height: 2px;
-    width: 200px;
+  color: #333333; /* Цвет линии для остальных браузеров */
+  background-color: #333333; /* Цвет линии для браузера Firefox и Opera */
+  height: 2px;
+  width: 200px;
 }
 .block-center{
 	position: relative;
@@ -131,11 +132,9 @@ hr{
 h4{
 	color: #0077cc;
 	font-size: 1.6em;
-	background-color: #fff;
 }
 p{
 	font-size: 1.3em;
-	background-color: #fff;
 }
 
 /*2 pic*/
@@ -147,9 +146,41 @@ p{
 	text-align: center;
 	padding: 40px 0;
 }
-a{
+a,h5{
 	color: #d30027;
 }
 a:hover{
 	color: #d30027;
+}
+/*Lessons*/
+h5{
+	font-size: 1.2em;
+}
+
+.doc{
+	list-style-image: url(../img/icon-doc-small.png);
+	padding-left: 10px; 
+}
+.print{
+	list-style-image: url(../img/icon-print-small.png);	
+	padding-left: 10px;
+}
+.slide{
+	list-style-image: url(../img/icon-slideshow-small.png);	
+	padding-left: 10px;
+}
+.lessons-hr{
+	border: none; /* Убираем границу для браузера Firefox */
+  color: #cedce5; /* Цвет линии для остальных браузеров */
+  background-color: #cedce5; /* Цвет линии для браузера Firefox и Opera */
+  height: 1px;
+}
+
+/*Carving*/
+.carving{
+	background: url(../img/carving-rider.png) right no-repeat;
+	min-height: 593px;
+}
+.block-center .col-md-6{
+	margin: auto 0;
 }
