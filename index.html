@@ -6,12 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
-		<script type="text/javascript" src="js\jquery-2.1.1.js"></script>
-		<script type="text/javascript" src="js\bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script language="JavaScript">
 			function openDir(form) {
 			window.location=(form.dir.options[form.dir.selectedIndex].value);
 			}
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$('a[href^="#"').click(function(){
+					var target = $(this).attr('href');
+					$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+					return false;
+				});
+			})
 		</script>
 		<title>Slenergy</title>
 	</head>
