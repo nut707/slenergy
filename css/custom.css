@@ -1,10 +1,28 @@
 @font-face{
 	font-family: 'Proxima Nova';
-	src: url(../fonts/Proxima Nova Extra Condensed Bold.otf);
+	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf);
 }
 @font-face{
 	font-family: 'Open Sans';
 	src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: 'Open Sans Semibold';
+	src:url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face{
+	font-family: 'Open Sans Bold';
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+
+h1, h2, h3, h5,.button{
+	font-family: 'Proxima Nova', 'Comic Sans MS';
+}
+.top-features,.form-control,a{
+	font-family: 'Open Sans Semibold', 'Comic Sans MS';
+}
+h4,h6{
+	font-family: 'Open Sans Bold', 'Comic Sans MS';
 }
 body
 {
@@ -12,7 +30,7 @@ body
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	font-family: 'Open Sans', 'Arial';
+	font-family: 'Open Sans', 'Comic Sans MS';
 	color:#333333;
 }
 /*Шапка*/
@@ -23,12 +41,10 @@ header{
 .logo{
 	margin-top: 15px;
 }
-
+/*социальные иконки в самом конце*/
 
 /*Лозунг и заголовок*/
-h1, h2, h5{
-	font-family: 'Proxima Nova', 'Arial';
-}
+
 h1{
 	background: #0077cc;
 	color: white;
@@ -59,7 +75,8 @@ h2{
 	width: 230px;
 	height: 40px;
 	-webkit-appearance: none;
-	-moz-appearance:none;/* Не работает :( */
+	-moz-appearance: none;/* Не работает :( */
+	appearance:none;
 	background: url(../img/arrow.png) no-repeat #fff;
 	background-position: 95% 50%;
 	margin-right: 20px;
@@ -73,13 +90,11 @@ select::-ms-expand {
     display: none;
 }
 option{
-	border: 2px solid #d30027;
 	color:#333333;
 }
 /*Кнопка перейти*/
 .button{
 	border: 2px solid #d30027;
-	font-family: 'Proxima Nova', 'sans serif';
 	width: 110px;
 	height: 38px;
 	color: #fff;
@@ -112,7 +127,6 @@ form{
 
 /*Школа*/
 h3{
-	font-family: 'Proxima Nova', 'sans serif';
 	font-size: 3em;
 	text-transform: uppercase;
 	text-align: center;
@@ -190,11 +204,22 @@ h6{
 /*Carving*/
 .carving{
 	background: url(../img/carving-rider.png) right no-repeat;
-	min-height: 593px;
+	min-height: 600px;
 }
 .block-center .col-md-6{
 	margin: auto 0;
 }
+.carving h2{
+	font-size: 6.2em;
+}
+.carving p{
+	padding:20px 40px 40px 10px;
+}
+.carving .button{
+	margin-left: 10px;
+}
+
+/*footer*/
 footer{
 	background-color: #bec3c7;
 	margin-top: 5%;
@@ -205,41 +230,87 @@ footer p{
 	text-align: center;
 	margin-bottom: 2%;
 }
-.social-icons, .social-icons a{
+/*social icons buttons*/
+footer .social-icons,footer .social-icons a{
 	display: inline-block;
 	height: 47px;
 	width: 46px;
 	margin-right: 1%;
 }
 
-.vk{
-	background: url(../img/social-icons/medium/vk.png);
+footer .vk{
+	background-image: url(../img/social-icons/medium/vk.png);
 }
-.fb{
-	background: url(../img/social-icons/medium/fb.png);
+footer .fb{
+	background-image: url(../img/social-icons/medium/fb.png);
 }
-.ok{
-	background: url(../img/social-icons/medium/ok.png);
+footer .ok{
+	background-image: url(../img/social-icons/medium/ok.png);
 }
-.inst{
-	background: url(../img/social-icons/medium/inst.png);
+footer .inst{
+	background-image: url(../img/social-icons/medium/inst.png);
 }
-.tw{
-	background: url(../img/social-icons/medium/tw.png);
+footer .tw{
+	background-image: url(../img/social-icons/medium/tw.png);
 }
 
-.vk:hover{
-	background: url(../img/social-icons/medium-red/vk.png);
+footer .vk:hover{
+	background-image: url(../img/social-icons/medium-red/vk.png);
 }
-.fb:hover{
-	background: url(../img/social-icons/medium-red/fb.png);
+footer .fb:hover{
+	background-image: url(../img/social-icons/medium-red/fb.png);
 }
-.ok:hover{
-	background: url(../img/social-icons/medium-red/ok.png);
+footer .ok:hover{
+	background-image: url(../img/social-icons/medium-red/ok.png);
 }
-.inst:hover{
-	background: url(../img/social-icons/medium-red/inst.png);
+footer .inst:hover{
+	background-image: url(../img/social-icons/medium-red/inst.png);
 }
-.tw:hover{
-	background: url(../img/social-icons/medium-red/tw.png);
+footer .tw:hover{
+	background-image: url(../img/social-icons/medium-red/tw.png);
+}
+
+header .social-icons,header .social-icons a{
+	display: inline-block;
+	height: 36px;
+	width: 34px;
+	margin-right: 4%;
+	background-repeat: no-repeat;
+}
+header .social-icons{
+	margin-top: 40px;
+}
+header .col-md-4{
+	text-align: center;
+}
+header .vk{
+	background-image: url(../img/social-icons/small/vk.png);
+}
+header .fb{
+	background-image: url(../img/social-icons/small/fb.png);
+}
+header .ok{
+	background-image: url(../img/social-icons/small/ok.png);
+}
+header .inst{
+	background-image: url(../img/social-icons/small/inst.png);
+}
+header .tw{
+	background-image: url(../img/social-icons/small/tw.png);
+}
+
+header .vk:hover{
+	background-image: url(../img/social-icons/small-red/vk.png);
+}
+header .fb:hover{
+	background-image: url(../img/social-icons/small-red/fb.png);
+}
+header .ok:hover{
+	background-image: url(../img/social-icons/small-red/ok.png);
+}
+header .inst:hover{
+	background-image: url(../img/social-icons/small-red/inst.png);
+}
+header .tw:hover{
+	background-image: url(../img/social-icons/small-red/tw.png);
 }
