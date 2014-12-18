@@ -37,8 +37,6 @@ body
 header{
 	height: 100px;
 	margin-bottom: 75px;
-}
-.logo{
 	margin-top: 15px;
 }
 /*социальные иконки в самом конце*/
@@ -170,7 +168,7 @@ a{
 	font-size: 1.2em;
 }
 a:hover{
-	color: #d30027;
+	color: #ed002c;;
 }
 /*Lessons*/
 h5{
@@ -278,7 +276,7 @@ header .social-icons,header .social-icons a{
 	background-repeat: no-repeat;
 }
 header .social-icons{
-	margin-top: 40px;
+	margin-top: 25px;
 }
 header .col-md-4{
 	text-align: center;
@@ -313,4 +311,51 @@ header .inst:hover{
 }
 header .tw:hover{
 	background-image: url(../img/social-icons/small-red/tw.png);
+}
+
+/*Dropdown menu alternative*/
+.dropdown{
+	margin: 2em 0;
+	padding: 0;
+	width: 300px;
+}
+
+.dropdown-toggle{
+	width: 100%;
+	font-size: 2em;
+	font-family: 'Proxima Nova';
+	color: #d30027;
+	border: 2px solid #d30027;
+	border-radius: 0;
+	padding: 5px;
+	background-color: transparent;
+	
+}
+.dropdown-toggle:hover, .dropdown-menu>li a:hover{
+	background-color: #ed002c;
+	color: white;	
+}
+/*Затемнение кнопки, когда открыто меню*/
+.open>.dropdown-toggle{
+	background-color: #a0001e;
+	color: #f2f2f2;
+	border: 2px solid #a0001e;
+	
+}
+.dropdown-menu{
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: #d30027;
+	border: 2px solid #d30027;
+	border-radius: 0;
+}
+.dropdown-menu li a{
+	color: #d30027;
+	font-family: 'Open Sans Semibold';
+	text-transform: uppercase;
+}
+.glyphicon{
+	padding-left: 10px;
+	font-size: 0.8em;
 }

@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
+		<script type="text/javascript" src="js\jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js\bootstrap.min.js"></script>
 		<script language="JavaScript">
 			function openDir(form) {
 			window.location=(form.dir.options[form.dir.selectedIndex].value);
@@ -56,7 +58,22 @@
 						<li>Обучение с инструткором международной категории.</li>
 						<li>Более 1&nbsp;000&nbsp;000 просмотров видео.</li>
 					</ul>
-					<form name="myform">						
+					<!--Выбрать урок альтернатива-->
+					<div class="dropdown">
+						<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							ВЫБРАТЬ ТЕМУ УРОКА 
+							<span class='glyphicon glyphicon-hand-down' aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#equipment">Подбор снаряжения</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#basics">Основы сноубординга</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#freestyle">Фристайл</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#jibbing">Cноупласт и джиббинг</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#pro-turns">Прогрессивные повороты</a></li>
+						</ul>
+					</div>
+					<!--Выбрать урок-->
+					<form name="myform">
 						<select class='form-control'name="dir" size="1">
 							<option value="">Выбрать тему урока</option>
 							<option value='#equipment'> Подбор снаряжения
