@@ -1,6 +1,10 @@
 @font-face{
 	font-family: 'Proxima Nova';
-	src: local("Proxima Nova Extra Condensed Bold"), url(fonts/Proxima Nova Extra Condensed Bold.otf);
+	src: url(../fonts/Proxima Nova Extra Condensed Bold.otf);
+}
+@font-face{
+	font-family: 'Open Sans';
+	src:url(../fonts/OpenSans-Regular.ttf);
 }
 body
 {
@@ -8,7 +12,7 @@ body
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	font-family: 'Open Sans', 'sans serif';
+	font-family: 'Open Sans', 'Arial';
 	color:#333333;
 }
 /*Шапка*/
@@ -23,7 +27,7 @@ header{
 
 /*Лозунг и заголовок*/
 h1, h2, h5{
-	font-family: 'Proxima Nova', 'sans serif';
+	font-family: 'Proxima Nova', 'Arial';
 }
 h1{
 	background: #0077cc;
@@ -193,10 +197,49 @@ h6{
 }
 footer{
 	background-color: #bec3c7;
-	height: 200px;
-	margin-top: 10%;
-	padding: 10%;
+	margin-top: 5%;
+	text-align: center;
+	padding: 3% 0 2% 0; 
 }
 footer p{
 	text-align: center;
+	margin-bottom: 2%;
+}
+.social-icons, .social-icons a{
+	display: inline-block;
+	height: 47px;
+	width: 46px;
+	margin-right: 1%;
+}
+
+.vk{
+	background: url(../img/social-icons/medium/vk.png);
+}
+.fb{
+	background: url(../img/social-icons/medium/fb.png);
+}
+.ok{
+	background: url(../img/social-icons/medium/ok.png);
+}
+.inst{
+	background: url(../img/social-icons/medium/inst.png);
+}
+.tw{
+	background: url(../img/social-icons/medium/tw.png);
+}
+
+.vk:hover{
+	background: url(../img/social-icons/medium-red/vk.png);
+}
+.fb:hover{
+	background: url(../img/social-icons/medium-red/fb.png);
+}
+.ok:hover{
+	background: url(../img/social-icons/medium-red/ok.png);
+}
+.inst:hover{
+	background: url(../img/social-icons/medium-red/inst.png);
+}
+.tw:hover{
+	background: url(../img/social-icons/medium-red/tw.png);
 }
