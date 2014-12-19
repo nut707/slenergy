@@ -48,12 +48,16 @@ header{
 
 /*up buton*/
 .up{
+	width: 50px;
+	height: 21px;
 	position: fixed;
 	left:2%;
 	bottom: 2%;
 	padding: 0;
-	z-index: 1;
+	z-index: 99;
+	text-align: center;
 }
+
 .up:focus{
 	outline: none;
 }
@@ -155,21 +159,31 @@ h3{
 	width: 200px;
 }
 .block-center{
-	position: relative;
-	display: flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
-.block-center>.col-md-5{
+.block-center div{
 	margin: auto;
-	z-index: 1;
+}
+.block-center p{
+	z-index: 10;
 }
 h4{
 	color: #0077cc;
 	font-size: 1.6em;
+	margin-bottom: 6%;
 }
 
 p{
 	font-size: 1.3em;
 	text-align: left;
+}
+
+h4, p{
+	padding-left: 2%;
 }
 
 
@@ -183,14 +197,17 @@ p{
 	text-align: center;
 	padding: 40px 0;
 }
+.two-pic p, .two-pic h4{
+	padding: 2%;
+}
 a{
 	color: #d30027;
-	font-size: 1.05em;
+	font-size: 1.2em;
 }
 a:hover{
 	color: #ed002c;
 }
-a:active, a:visited{
+a:link, a:active, a:visited{
 	color:#d30027;
 }
 /*Lessons*/
@@ -337,7 +354,7 @@ header .tw:hover{
 
 /*Dropdown menu alternative*/
 .dropdown{
-	margin: 2em 10px;
+	margin: 2em 0;
 	padding: 0; 
 	width: 300px;
 }
@@ -366,7 +383,7 @@ header .tw:hover{
 }
 .dropdown-menu{
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	font-size: 1em;
 	color: #d30027;
 	border: 2px solid #d30027;
