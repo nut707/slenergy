@@ -149,10 +149,13 @@ h4{
 	color: #0077cc;
 	font-size: 1.6em;
 }
+
 p{
 	font-size: 1.3em;
 	text-align: left;
 }
+
+
 
 /*2 pic*/
 .zigzag{
@@ -201,10 +204,9 @@ h6{
 
 /*Carving*/
 .carving{
-	background: url(../img/carving-rider.png) right no-repeat;
 	min-height: 600px;
 }
-.block-center .col-md-6{
+.carving .col-md-6{
 	margin: auto 0;
 }
 .carving h2{
