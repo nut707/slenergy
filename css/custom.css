@@ -300,7 +300,7 @@ header .social-icons,header .social-icons a{
 header .social-icons{
 	margin-top: 25px;
 }
-header .col-md-4{
+header .col-md-offset-4{
 	text-align: center;
 }
 header .vk{
