@@ -174,7 +174,10 @@ h3{
 h4{
 	color: #0077cc;
 	font-size: 1.6em;
-	margin-bottom: 6%;
+}
+
+.block-center h4{
+	margin-bottom: 4%;
 }
 
 p{
@@ -182,7 +185,7 @@ p{
 	text-align: left;
 }
 
-h4, p{
+h4, h4+p{
 	padding-left: 2%;
 }
 
@@ -198,7 +201,7 @@ h4, p{
 	padding: 40px 0;
 }
 .two-pic p, .two-pic h4{
-	padding: 2%;
+	padding: 1%;
 }
 a{
 	color: #d30027;
