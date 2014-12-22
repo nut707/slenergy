@@ -222,19 +222,24 @@ h5{
 h6{
 	font-size: 1.5em;
 }
-
+ul{
+	padding: 0;
+}
+.doc, .print, .slide{
+	list-style-type: none;
+	padding-left: 40px;
+	padding-bottom: 10px;
+}
 .doc{
-	list-style-image: url(../img/icon-doc-small.png);
-	padding-left: 10px; 
+	background: url(../img/icon-doc-small.png) no-repeat left top;
 }
 .print{
-	list-style-image: url(../img/icon-print-small.png);	
-	padding-left: 10px;
+	background: url(../img/icon-print-small.png) no-repeat left top;
 }
 .slide{
-	list-style-image: url(../img/icon-slideshow-small.png);	
-	padding-left: 10px;
+	background: url(../img/icon-slide-small.png) no-repeat left top;
 }
+
 .lessons-hr{
 	border: none; /* Убираем границу для браузера Firefox */
 	color: #cedce5; /* Цвет линии для остальных браузеров */
