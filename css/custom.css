@@ -137,6 +137,7 @@ form{
 .arrow-divider{
 	background: url(../img/arrow-divider.png) no-repeat center;
 	height: 40px;
+	z-index: 99;
 }
 .divider{
 	position: absolute;
@@ -169,6 +170,9 @@ h3{
 	margin: auto;
 }
 .block-center p{
+	z-index: 10;
+}
+.block-center .col-md-5{
 	z-index: 10;
 }
 h4{
@@ -406,4 +410,15 @@ header .tw:hover{
 .glyphicon-hand-down{
 	padding-left: 10px;
 	font-size: 0.8em;
+}
+
+
+/*Relative school*/
+@media (min-width: 992px){
+	.relative-margin{
+		margin-top: -25px;
+	}
+	.arrow-divider{
+		margin-top: -80px;
+	}
 }
