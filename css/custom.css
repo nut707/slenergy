@@ -1,18 +1,21 @@
 @font-face{
 	font-family: 'Proxima Nova';
-	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf);
+	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf) format (opentype);
+   font-weight: normal;
+   font-style: normal;
 }
 @font-face{
 	font-family: 'Open Sans';
-	src:url(../fonts/OpenSans-Regular.ttf);
+	src:url(../fonts/OpenSans-Regular.ttf) format (truetype);
 }
 @font-face{
 	font-family: 'Open Sans Semibold';
-	src:url(../fonts/OpenSans-Semibold.ttf);
+	src:url(../fonts/OpenSans-Semibold.ttf) format (truetype);
 }
 @font-face{
 	font-family: 'Open Sans Bold';
-	src:url(../fonts/OpenSans-Bold.ttf);
+	src:url(../fonts/OpenSans-Bold.ttf) format (truetype);
+	font-weight: bold;
 }
 
 h1, h2, h3, h5,.button{
