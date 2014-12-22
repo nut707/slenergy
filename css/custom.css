@@ -147,7 +147,7 @@ form{
 
 /*Школа*/
 h3{
-	font-size: 3em;
+	font-size: 40pt;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 40px;
@@ -177,7 +177,7 @@ h3{
 }
 h4{
 	color: #0077cc;
-	font-size: 1.6em;
+	font-size: 18pt;
 }
 
 .block-center h4{
@@ -220,7 +220,7 @@ a:link, a:active, a:visited{
 /*Lessons*/
 h5{
 	color: #d30027;
-	font-size: 3em;
+	font-size: 29.07pt;
 	text-transform: uppercase;
 }
 h6{
