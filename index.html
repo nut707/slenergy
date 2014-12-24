@@ -22,15 +22,20 @@
 				});
 			})
 		</script>
+		<script type="text/javascript">$(document).ready(function(){
+			$(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+			$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
+		});
+		</script>
 		<title>Slenergy</title>
 	</head>
 	
 	<body>
-		<a class='up'href="#top"><span class='glyphicon glyphicon-chevron-up'></span></a>
+		<a id='scroller' class='up'href="#top"><span class='glyphicon glyphicon-chevron-up'></span></a>
 		<header >
 			<div class='container'>
 				<div class="row">
-					<div class='col-md-4 col-sm-6  logo'>
+					<div class='col-md-4 col-sm-6 logo'>
 						<a href="http://slenergy.ru/" >
 							<img src="./img/logo.png"/>
 						</a>
@@ -123,7 +128,7 @@
 						<P>Советы начинающим, как купить подходящий сноуборд, ботинки и крепления. Как одеться на склон, чтобы кататься в удовольствие, а не мерзнуть на морозе, а также какая вам потребуется защита.</P>
 					</div>
 				</div>
-				<div class='arrow-divider'></div>
+				<div class='arrow-divider sm'></div>
 				<div class='row block-center relative-margin'>
 					<div class='col-md-5 col-xs-12'>
 						<h4>Будешь чувствовать <br>себя уверенно на склоне</h4>
@@ -490,7 +495,7 @@
 		<div class="container">
 			<div class="row carving block-center">
 				<div class='col-md-6' style='z-index:1;'>
-					<h1>НОВОЕ В СЕЗОНЕ 2015-2015</h1>
+					<h1>НОВОЕ В СЕЗОНЕ 2014-2015</h1>
 					<h2>КАРВИНГ</h2>
 					<p>Следите за страницей с новыми уроками  школы сноубординга, которая будет обновляться в течение сезона.</p>
 					<button class="button">ПЕРЕЙТИ</button>

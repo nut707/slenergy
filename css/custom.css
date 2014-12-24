@@ -1,41 +1,35 @@
 @font-face{
 	font-family: 'Proxima Nova';
-	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf) format (opentype);
-   font-weight: normal;
-   font-style: normal;
+	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf);
+
 }
 @font-face{
 	font-family: 'Open Sans';
-	src:url(../fonts/OpenSans-Regular.ttf) format (truetype);
+	src:url(../fonts/OpenSans-Regular.ttf);
 }
 @font-face{
 	font-family: 'Open Sans Semibold';
-	src:url(../fonts/OpenSans-Semibold.ttf) format (truetype);
-}
-@font-face{
-	font-family: 'Open Sans Bold';
-	src:url(../fonts/OpenSans-Bold.ttf) format (truetype);
-	font-weight: bold;
+	src:url(../fonts/OpenSans-Semibold.ttf);
 }
 
 h1, h2, h3, h5,.button{
-	font-family: 'Proxima Nova', 'Comic Sans MS';
+	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
 }
 .top-features,.form-control,a{
-	font-family: 'Open Sans Semibold', 'Comic Sans MS';
+	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 }
 h4,h6{
-	font-family: 'Open Sans Bold', 'Comic Sans MS';
+	font-family: 'Open Sans', Arial, Ubuntu, sans-serif;
+	font-weight: bold;
 }
 body
 {
-	min-height: 3000px;
-	background: url(../img/background.png) no-repeat center top;
+	background: url(../img/background.jpg) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-	font-family: 'Open Sans', 'Comic Sans MS';
+	font-family: 'Open Sans', Arial, Ubuntu, sans-serif;
 	color:#333333;
 }
 /*Шапка*/
@@ -150,7 +144,7 @@ form{
 
 /*Школа*/
 h3{
-	font-size: 40pt;
+	font-size: 3.333em;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 40px;
@@ -236,16 +230,16 @@ h6{
 .doc, .print, .slide{
 	list-style-type: none;
 	padding-left: 40px;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 .doc{
-	background: url(../img/icon-doc-small.png) no-repeat left top;
+	background: url(../img/icon-doc-small.png) no-repeat left center;
 }
 .print{
-	background: url(../img/icon-print-small.png) no-repeat left top;
+	background: url(../img/icon-print-small.png) no-repeat left center;
 }
 .slide{
-	background: url(../img/icon-slide-small.png) no-repeat left top;
+	background: url(../img/icon-slide-small.png) no-repeat left center;
 }
 
 .lessons-hr{
@@ -286,47 +280,48 @@ footer p{
 /*social icons buttons*/
 footer .social-icons,footer .social-icons a{
 	display: inline-block;
-	height: 47px;
-	width: 46px;
+	height: 45px;
+	width: 45px;
 	margin-right: 1%;
 }
 
+
 footer .vk{
-	background-image: url(../img/social-icons/medium/vk.png);
+	background: url(../img/icons-soc.png)  -0 -90px no-repeat;
 }
 footer .fb{
-	background-image: url(../img/social-icons/medium/fb.png);
+	background: url(../img/icons-soc.png)  -61px -90px no-repeat;
 }
 footer .ok{
-	background-image: url(../img/social-icons/medium/ok.png);
+	background: url(../img/icons-soc.png)  -122px -90px no-repeat;
 }
 footer .inst{
-	background-image: url(../img/social-icons/medium/inst.png);
+	background: url(../img/icons-soc.png)  -184px -90px no-repeat;
 }
 footer .tw{
-	background-image: url(../img/social-icons/medium/tw.png);
+	background: url(../img/icons-soc.png)  -245px -90px no-repeat;
 }
 
 footer .vk:hover{
-	background-image: url(../img/social-icons/medium-red/vk.png);
+	background: url(../img/icons-soc.png)  -0px -140px no-repeat;
 }
 footer .fb:hover{
-	background-image: url(../img/social-icons/medium-red/fb.png);
+	background: url(../img/icons-soc.png)  -61px -140px no-repeat;
 }
 footer .ok:hover{
-	background-image: url(../img/social-icons/medium-red/ok.png);
+	background: url(../img/icons-soc.png)  -122px -140px no-repeat;
 }
 footer .inst:hover{
-	background-image: url(../img/social-icons/medium-red/inst.png);
+	background: url(../img/icons-soc.png)  -184px -140px no-repeat;
 }
 footer .tw:hover{
-	background-image: url(../img/social-icons/medium-red/tw.png);
+	background: url(../img/icons-soc.png)  -245px -140px no-repeat;
 }
 
 header .social-icons,header .social-icons a{
 	display: inline-block;
-	height: 36px;
-	width: 34px;
+	height: 32px;
+	width: 32px;
 	margin-right: 4%;
 	background-repeat: no-repeat;
 }
@@ -337,36 +332,37 @@ header .col-md-offset-4{
 	text-align: center;
 }
 header .vk{
-	background-image: url(../img/social-icons/small/vk.png);
+	background: url(../img/icons-soc.png)  -79px 0;
 }
 header .fb{
-	background-image: url(../img/social-icons/small/fb.png);
+	background: url(../img/icons-soc.png) -124px 0;
 }
 header .ok{
-	background-image: url(../img/social-icons/small/ok.png);
+	background: url(../img/icons-soc.png) -168px 0;
 }
 header .inst{
-	background-image: url(../img/social-icons/small/inst.png);
+	background: url(../img/icons-soc.png) -213px 0;
 }
 header .tw{
-	background-image: url(../img/social-icons/small/tw.png);
+	background: url(../img/icons-soc.png) -257px 0;
 }
 
 header .vk:hover{
-	background-image: url(../img/social-icons/small-red/vk.png);
+	background: url(../img/icons-soc.png)  -79px -35px;
 }
 header .fb:hover{
-	background-image: url(../img/social-icons/small-red/fb.png);
+	background: url(../img/icons-soc.png) -124px -35px;
 }
 header .ok:hover{
-	background-image: url(../img/social-icons/small-red/ok.png);
+	background: url(../img/icons-soc.png) -168px -35px;
 }
 header .inst:hover{
-	background-image: url(../img/social-icons/small-red/inst.png);
+	background: url(../img/icons-soc.png) -213px -35px;
 }
 header .tw:hover{
-	background-image: url(../img/social-icons/small-red/tw.png);
+	background: url(../img/icons-soc.png) -257px -35px;
 }
+
 
 /*Dropdown menu alternative*/
 .dropdown{
@@ -378,7 +374,7 @@ header .tw:hover{
 .dropdown-toggle{
 	width: 100%;
 	font-size: 2em;
-	font-family: 'Proxima Nova';
+	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
 	color: #d30027;
 	border: 2px solid #d30027;
 	border-radius: 0;
@@ -407,7 +403,7 @@ header .tw:hover{
 }
 .dropdown-menu li a{
 	color: #d30027;
-	font-family: 'Open Sans Semibold';
+	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 	text-transform: uppercase;
 }
 .glyphicon-hand-down{
@@ -422,6 +418,9 @@ header .tw:hover{
 		margin-top: -25px;
 	}
 	.arrow-divider{
-		margin-top: -80px;
+		margin-top: -85px;
+	}
+	.sm{
+		margin-top:-65px;
 	}
 }
