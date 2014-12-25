@@ -24,6 +24,7 @@ h4,h6{
 }
 body
 {
+	zoom:85%;
 	background: url(../img/background.jpg) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -187,7 +188,7 @@ p{
 
 /*2 pic*/
 .zigzag{
-	background:url(../img/zigzag.png);
+	background:url(../img/zigzag.png) center repeat-x;
 	height: 16px;
 }
 .two-pic div{
