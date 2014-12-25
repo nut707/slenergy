@@ -172,21 +172,16 @@ h3{
 }
 h4{
 	color: #0077cc;
-	font-size: 18pt;
-}
-
-.block-center h4{
+	font-size: 170%;
 	margin-bottom: 4%;
 }
 
 p{
-	font-size: 16pt;
+	font-size: 120%;
 	text-align: left;
 }
 
-h4, h4+p{
-	padding-left: 2%;
-}
+
 
 
 
@@ -199,12 +194,14 @@ h4, h4+p{
 	text-align: center;
 	padding: 40px 0;
 }
-.two-pic p, .two-pic h4{
-	padding: 1%;
+.two-pic p{
+	margin-bottom: 25px;
+	padding: 0 25px;
+	text-align: justify;
 }
 a{
 	color: #d30027;
-	font-size: 12pt;
+	font-size: 100%;
 }
 a:hover{
 	color: #ed002c;
@@ -215,11 +212,11 @@ a:link, a:active, a:visited{
 /*Lessons*/
 h5{
 	color: #d30027;
-	font-size: 29.07pt;
+	font-size: 290%;
 	text-transform: uppercase;
 }
 h6{
-	font-size: 18pt;
+	font-size: 160%;
 }
 .col-md-4 ul{
 	padding: 0;
@@ -229,6 +226,7 @@ h6{
 	list-style-type: none;
 	padding-left: 40px;
 	margin-bottom: 10px;
+	min-height: 22px;
 }
 .doc{
 	background: url(../img/icon-doc-small.png) no-repeat left center;
@@ -297,7 +295,7 @@ footer .inst{
 	background: url(../img/icons-soc.png)  -184px -90px no-repeat;
 }
 footer .tw{
-	background: url(../img/icons-soc.png)  -245px -90px no-repeat;
+	background: url(../img/you.png) 0 -80px no-repeat;
 }
 
 footer .vk:hover{
@@ -313,7 +311,7 @@ footer .inst:hover{
 	background: url(../img/icons-soc.png)  -184px -140px no-repeat;
 }
 footer .tw:hover{
-	background: url(../img/icons-soc.png)  -245px -140px no-repeat;
+	background: url(../img/you.png)  0px -130px no-repeat;
 }
 
 header .social-icons,header .social-icons a{
@@ -342,7 +340,7 @@ header .inst{
 	background: url(../img/icons-soc.png) -213px 0;
 }
 header .tw{
-	background: url(../img/icons-soc.png) -257px 0;
+	background: url(../img/you.png) 0 0;
 }
 
 header .vk:hover{
@@ -358,7 +356,7 @@ header .inst:hover{
 	background: url(../img/icons-soc.png) -213px -35px;
 }
 header .tw:hover{
-	background: url(../img/icons-soc.png) -257px -35px;
+	background: url(../img/you.png) 0px -40px;
 }
 
 
@@ -420,5 +418,10 @@ header .tw:hover{
 	}
 	.sm{
 		margin-top:-65px;
+	}
+}
+@media(max-width: 767px){
+		h4, h4+p{
+		padding-left: 15px;
 	}
 }
