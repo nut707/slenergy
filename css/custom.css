@@ -401,6 +401,7 @@ header .tw:hover{
 	color: #d30027;
 	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 	text-transform: uppercase;
+	font-size: 130%;
 }
 .glyphicon-hand-down{
 	padding-left: 10px;
