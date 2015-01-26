@@ -24,7 +24,6 @@ h4,h6{
 }
 body
 {
-	zoom:85%;
 	background: url(../img/background.jpg) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -46,14 +45,15 @@ header{
 
 /*up buton*/
 .up{
-	width: 50px;
-	height: 21px;
+	width: 75px;
+	height: 45px;
 	position: fixed;
-	left:2%;
-	bottom: 2%;
+	left:0;
+	bottom: 0;
 	padding: 0;
 	z-index: 99;
 	text-align: center;
+	font-size: 150%;
 }
 
 .up:focus{
@@ -84,7 +84,7 @@ h2{
 }
 .top-features>li{
 	padding-top: 5px;
-	font-size: 1.2em;
+	font-size: 100%;
 }
 
 /*Select and go*/
@@ -143,10 +143,11 @@ option{
 
 /*Школа*/
 h3{
-	font-size: 3.333em;
+	font-size: 300%;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 40px;
+	padding-left: 15px;
 }
 .black-hr{
 	border: none; /* Убираем границу для браузера Firefox */
@@ -178,12 +179,9 @@ h4{
 }
 
 p{
-	font-size: 120%;
+	font-size: 100%;
 	text-align: left;
 }
-
-
-
 
 
 /*2 pic*/
@@ -197,12 +195,12 @@ p{
 }
 .two-pic p{
 	margin-bottom: 25px;
-	padding: 0 25px;
+	padding: 0 15px;
 	text-align: justify;
 }
 a{
 	color: #d30027;
-	font-size: 100%;
+	font-size: 85%;
 }
 a:hover{
 	color: #ed002c;
@@ -213,11 +211,11 @@ a:link, a:active, a:visited{
 /*Lessons*/
 h5{
 	color: #d30027;
-	font-size: 290%;
+	font-size: 215%;
 	text-transform: uppercase;
 }
 h6{
-	font-size: 160%;
+	font-size: 140%;
 }
 .col-md-4 ul{
 	padding: 0;
@@ -254,7 +252,7 @@ h6{
 	margin: auto 0;
 }
 .carving h2{
-	font-size: 6.2em;
+	font-size: 620%;
 }
 .carving p{
 	padding:20px 40px 40px 10px;
@@ -268,11 +266,12 @@ footer{
 	background-color: #bec3c7;
 	margin-top: 5%;
 	text-align: center;
-	padding: 3% 0 2% 0; 
+	padding: 40px 20px; 
 }
 footer p{
 	text-align: center;
-	margin-bottom: 2%;
+	margin-bottom: 20px;
+	font-size: 120%;
 }
 /*social icons buttons*/
 footer .social-icons,footer .social-icons a{
@@ -365,7 +364,8 @@ header .tw:hover{
 .dropdown{
 	margin: 2em 0;
 	padding: 0; 
-	width: 450px;
+	max-width: 450px;
+	width: 100%;
 }
 
 .dropdown-toggle{
@@ -403,6 +403,7 @@ header .tw:hover{
 	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 	text-transform: uppercase;
 	font-size: 130%;
+	white-space: normal;
 }
 .glyphicon-hand-down{
 	padding-left: 10px;
@@ -418,12 +419,20 @@ header .tw:hover{
 	.arrow-divider{
 		margin-top: -85px;
 	}
-	.sm{
+	.arrow-divider-1{
+		margin-top: 0px;	
+	}
+	.first{
 		margin-top:-65px;
 	}
 }
 @media(max-width: 767px){
 		h4, h4+p{
 		padding-left: 15px;
+	}
+}
+@media (min-width: 1200px){
+	.container {
+		width: 950px;
 	}
 }
