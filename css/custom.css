@@ -62,7 +62,7 @@ header{
 
 /*Лозунг и заголовок*/
 
-h1{
+h1, .carving h1{
 	background: #0077cc;
 	color: white;
 	padding: 5px 15px;
@@ -372,31 +372,35 @@ header .tw:hover{
 	width: 100%;
 	font-size: 2em;
 	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
-	color: #d30027;
+	color: white;
 	border: 2px solid #d30027;
 	border-radius: 0;
 	padding: 5px;
-	background-color: transparent;
+	background-color: #d30027;
 	
 }
-.dropdown-toggle:hover, .dropdown-menu>li a:hover{
-	background-color: #ed002c;
+.dropdown-menu>li a:hover{
+	background-color: #d30027;
 	color: white;	
+}
+.dropdown-toggle:hover{
+	background-color: transparent;
+	color: #d30027;
 }
 /*Затемнение кнопки, когда открыто меню*/
 .open>.dropdown-toggle{
-	background-color: #a0001e;
-	color: #f2f2f2;
-	border: 2px solid #a0001e;
+	background-color: transparent;
+	color: #d30027;
+	border: 2px solid #d30027;
 	
 }
 .dropdown-menu{
 	width: 100%;
 	text-align: left;
-	font-size: 1em;
 	color: #d30027;
 	border: 2px solid #d30027;
 	border-radius: 0;
+	padding: 0;
 }
 .dropdown-menu li a{
 	color: #d30027;
@@ -405,7 +409,7 @@ header .tw:hover{
 	font-size: 130%;
 	white-space: normal;
 }
-.glyphicon-hand-down{
+.glyphicon{
 	padding-left: 10px;
 	font-size: 0.8em;
 }
@@ -434,5 +438,31 @@ header .tw:hover{
 @media (min-width: 1200px){
 	.container {
 		width: 950px;
+	}
+}
+@media(max-width: 480px){
+	body{
+		font-size: 12px;
+	}
+	header{
+		zoom: 60%;
+		margin-bottom: 5%;
+	}
+	h1{
+		font-size: 250%;
+	}
+	h2{/*
+		font-size: 160%;*/
+		margin: 10px 0;
+	}
+	.top-features{
+		margin: 0px;
+	}
+	.dropdown{
+		margin: 10px 0px;
+	}
+	h3{
+		margin-top:10px;
+		font-size: 250%;
 	}
 }
