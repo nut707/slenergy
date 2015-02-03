@@ -34,11 +34,11 @@
 					else 
 						{$('#scroller').fadeOut();}
 				});
-			$('#scroller').click(function () {
-				$('body,html').animate({scrollTop: 0}, 800); return false;});
-			$('.dropdown').on('show.bs.dropdown', function () {
-				$('html, body').animate({scrollTop:$(this).offset().top-10},400)
-			})
+				$('#scroller').click(function () {
+					$('body,html').animate({scrollTop: 0}, 800); return false;});
+				$('.dropdown').on('show.bs.dropdown', function () {
+					$('html, body').animate({scrollTop:$(this).offset().top-10},400)
+				})
 			});
 		</script>
 		<title>Slenergy</title>
@@ -90,7 +90,7 @@
 					<!--Выбрать урок альтернатива-->
 					<div class="dropdown">
 						<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-							ВЫБРАТЬ ТЕМУ УРОКА СНОУБОРДИНГА
+							ВЫБРАТЬ ТЕМУ УРОКА
 							<span class='glyphicon glyphicon-hand-left' aria-hidden="true"></span>
 						</button>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -507,8 +507,8 @@
 		</div>
 
 		<!--carving-->
-		<div class="container">
-			<div class="row carving block-center" id="carving">
+		<div class="container" id="carving">
+			<div class="row carving block-center">
 				<div class='col-md-6' style='z-index:1;'>
 					<h1>НОВОЕ В СЕЗОНЕ 2014-2015</h1>
 					<h2>КАРВИНГ</h2>

@@ -11,7 +11,7 @@
 	font-family: 'Open Sans Semibold';
 	src:url(../fonts/OpenSans-Semibold.ttf);
 }
-
+html, body { overflow-x: hidden; }
 h1, h2, h3, h5,.button{
 	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
 }
@@ -45,7 +45,7 @@ header{
 
 /*up buton*/
 .up{
-	width: 75px;
+	width: 35px;
 	height: 45px;
 	position: fixed;
 	left:0;
@@ -147,7 +147,6 @@ h3{
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 40px;
-	padding-left: 15px;
 }
 .black-hr{
 	border: none; /* Убираем границу для браузера Firefox */
@@ -246,7 +245,7 @@ h6{
 
 /*Carving*/
 .carving{
-	min-height: 600px;
+	/*min-height: 600px;*/
 }
 .carving .col-md-6{
 	margin: auto 0;
@@ -364,7 +363,7 @@ header .tw:hover{
 .dropdown{
 	margin: 2em 0;
 	padding: 0; 
-	max-width: 450px;
+	max-width: 350px;
 	width: 100%;
 }
 
@@ -409,8 +408,8 @@ header .tw:hover{
 	font-size: 130%;
 	white-space: normal;
 }
-.glyphicon{
-	padding-left: 10px;
+.dropdown .glyphicon{
+	padding-left: 15px;
 	font-size: 0.8em;
 }
 
@@ -464,5 +463,13 @@ header .tw:hover{
 	h3{
 		margin-top:10px;
 		font-size: 250%;
+	}
+}
+@media(max-width: 992px){
+	.carving{
+		margin: 40px 0;
+	}
+	.carving div{
+		padding:0px;
 	}
 }
